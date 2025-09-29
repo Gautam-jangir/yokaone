@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KayoAnime — Home (Bootstrap)</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Accent you can reuse later */
+      --ka-accent: #0d6efd;
+    }
+
+    /* Optional: strict spacing reset that won't break Bootstrap's grid/components.
+         Enable it by adding class="spacing-zero" to <body>. */
+    .spacing-zero h1,
+    .spacing-zero h2,
+    .spacing-zero h3,
+    .spacing-zero h4,
+    .spacing-zero h5,
+    .spacing-zero h6,
+    .spacing-zero p,
+    .spacing-zero ul,
+    .spacing-zero ol,
+    .spacing-zero li,
+    .spacing-zero figure,
+    .spacing-zero blockquote {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    /* Header polish */
+    header.sticky-top {
+      box-shadow: 0 1px 0 rgba(0, 0, 0, .08);
+    }
+
+    .navbar-brand span {
+      color: var(--ka-accent);
+    }
+
+    .navbar .nav-link {
+      font-weight: 500;
+    }
+
+    .navbar .nav-link.active {
+      color: var(--ka-accent);
+    }
+
+    /* Search width on larger screens */
+    @media (min-width: 992px) {
+
+      /* lg */
+      #siteSearch {
+        width: 260px;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-body">
+  <!-- ===== Header / Navbar (Sticky) ===== -->
+  <header class="sticky-top bg-body border-bottom">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#" aria-label="KayoAnime Home">
+          <span>Kayo</span>Anime
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Anime Series</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Ongoing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Request</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Report</a></li>
+          </ul>
+
+          <form class="d-flex me-lg-2 mb-2 mb-lg-0" role="search" aria-label="Site search">
+            <input id="siteSearch" class="form-control" type="search" placeholder="Search anime…"
+              aria-label="Search anime">
+          </form>
+
+          <button class="btn btn-outline-secondary" id="themeToggle" type="button" aria-pressed="false"
+            aria-label="Switch theme">Dark Mode</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Placeholder Main (we'll build this next) ===== -->
+  <main>
+    <section class="py-5 text-center container">
+      <h1 class="display-5 fw-semibold">Step 1 complete: Header & Navbar</h1>
+      <p class="lead text-body-secondary">Next we’ll add a Breaking News / Updates ticker beneath the header, then the
+        featured area.</p>
+      <div>
+        <a class="btn btn-primary" href="#" role="button">Get Started</a>
+      </div>
+    </section> <!-- ===== 2 x 3 Gallery (equal-sized tiles with text overlay) ===== -->
+    <section class="py-4">
+      <div class="container">
+        <h2 class="h4 mb-3">Featured Gallery</h2>
+        <div class="row g-3">
+          <!-- Tile 1 -->
+          <div class="col-12 col-md-4">
+            <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=1200" alt="Gallery item 1"
+                class="w-100 h-100 object-fit-cover">
+              <div class="position-absolute bottom-0 start-0 end-0 p-2 p-md-3 text-white bg-dark bg-opacity-50">Title
+                One</div>
+            </div>
+          </div>
+          <!-- Tile 2 -->
+          <div class="col-12 col-md-4">
+            <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=1200" alt="Gallery item 2"
+                class="w-100 h-100 object-fit-cover">
+              <div class="position-absolute bottom-0 start-0 end-0 p-2 p-md-3 text-white bg-dark bg-opacity-50">Title
+                Two</div>
+            </div>
+          </div>
+          <!-- Tile 3 -->
+          <div class="col-12 col-md-4">
+            <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200" alt="Gallery item 3"
+                class="w-100 h-100 object-fit-cover">
+              <div class="position-absolute bottom-0 start-0 end-0 p-2 p-md-3 text-white bg-dark bg-opacity-50">Title
+                Three</div>
+            </div>
+          </div>
+          <!-- Tile 4 -->
+          <div class="col-12 col-md-4">
+            <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200" alt="Gallery item 4"
+                class="w-100 h-100 object-fit-cover">
+              <div class="position-absolute bottom-0 start-0 end-0 p-2 p-md-3 text-white bg-dark bg-opacity-50">Title
+                Four</div>
+            </div>
+          </div>
+          <!-- Tile 5 -->
+          <div class="col-12 col-md-4">
+            <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200" alt="Gallery item 5"
+                class="w-100 h-100 object-fit-cover">
+              <div class="position-absolute bottom-0 start-0 end-0 p-2 p-md-3 text-white bg-dark bg-opacity-50">Title
+                Five</div>
+            </div>
+          </div>
+          <!-- Tile 6 -->
+          <div class="col-12 col-md-4">
+            <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200" alt="Gallery item 6"
+                class="w-100 h-100 object-fit-cover">
+              <div class="position-absolute bottom-0 start-0 end-0 p-2 p-md-3 text-white bg-dark bg-opacity-50">Title
+                Six</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Theme toggle (light/dark) -->
+  <script>
+    (() => {
+      const btn = document.getElementById('themeToggle');
+      const root = document.documentElement;
+
+      function setTheme(theme) {
+        root.setAttribute('data-bs-theme', theme);
+        try { localStorage.setItem('theme', theme); } catch (e) { }
+        btn.setAttribute('aria-pressed', theme === 'dark');
+        btn.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+      }
+
+      const saved = (typeof localStorage !== 'undefined') ? localStorage.getItem('theme') : null;
+      const initial = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      setTheme(initial);
+
+      btn.addEventListener('click', () => {
+        const next = root.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+        setTheme(next);
+      });
+    })();
+  </script>
+</body>
+
+</html>
