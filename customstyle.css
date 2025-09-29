@@ -5,6 +5,9 @@
   font-family: sans-serif;
   /* font-size: 15px; */
 }
+html, body {
+  overflow-x: hidden;
+}
 
 /* Base (mobile first) */
 .myfont {
